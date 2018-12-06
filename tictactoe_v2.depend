@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1544138419 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\main.c
+	"engine.h"
+	"game.h"
+	<SDL2/SDL.h>
+
+1544138471 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\game.c
+	"game.h"
+	<stdlib.h>
+
+1544137716 c:\users\szabolcs\documents\codeblock\tictactoe_v2\game.h
+
+1544135542 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\sprites.c
+	"sprites.h"
+	<SDL2/SDL_image.h>
+
+1544133946 c:\users\szabolcs\documents\codeblock\tictactoe_v2\sprites.h
+	<SDL2/SDL.h>
+
+1544138522 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\engine.c
+	"engine.h"
+	<stdio.h>
+	<SDL2/SDL.h>
+	<stdbool.h>
+	"sprites.h"
+
+1544137750 c:\users\szabolcs\documents\codeblock\tictactoe_v2\engine.h
+	<stdbool.h>
+	"game.h"
+
