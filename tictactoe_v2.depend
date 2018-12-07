@@ -4,11 +4,14 @@
 	"game.h"
 	<SDL2/SDL.h>
 
-1544138471 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\game.c
+1544212593 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\game.c
 	"game.h"
 	<stdlib.h>
+	"robot.h"
+	<stdbool.h>
 
-1544137716 c:\users\szabolcs\documents\codeblock\tictactoe_v2\game.h
+1544212721 c:\users\szabolcs\documents\codeblock\tictactoe_v2\game.h
+	<stdbool.h>
 
 1544135542 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\sprites.c
 	"sprites.h"
@@ -17,14 +20,21 @@
 1544133946 c:\users\szabolcs\documents\codeblock\tictactoe_v2\sprites.h
 	<SDL2/SDL.h>
 
-1544138522 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\engine.c
+1544212969 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\engine.c
 	"engine.h"
 	<stdio.h>
 	<SDL2/SDL.h>
-	<stdbool.h>
 	"sprites.h"
 
-1544137750 c:\users\szabolcs\documents\codeblock\tictactoe_v2\engine.h
+1544208682 c:\users\szabolcs\documents\codeblock\tictactoe_v2\engine.h
 	<stdbool.h>
 	"game.h"
+
+1544209282 c:\users\szabolcs\documents\codeblock\tictactoe_v2\robot.h
+	"game.h"
+
+1544209413 source:c:\users\szabolcs\documents\codeblock\tictactoe_v2\robot.c
+	"robot.h"
+	<time.h>
+	<stdlib.h>
 

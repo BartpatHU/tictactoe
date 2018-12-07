@@ -1,8 +1,8 @@
 #include "engine.h"
 #include <stdio.h>
 #include <SDL2/SDL.h>
-#include <stdbool.h>
 #include "sprites.h"
+
 
 #define TILE_WIDTH 200
 #define TILE_HEIGHT 200
@@ -52,13 +52,20 @@ void handleEvents(Game* game){
     if (SDL_PollEvent(&event)){
         switch(event.type){
             case SDL_QUIT:
-                SDL_Quit();
+                running = false;
             break;
             case SDL_MOUSEBUTTONDOWN:
                 switch(event.button.button){
                     case SDL_BUTTON_LEFT:
                     printf("X:%d\tY:%d\n", event.motion.x, event.motion.y);
-                    changeTile(game, event.motion.x/TILE_WIDTH, event.motion.y/TILE_HEIGHT, X);
+                    if(game->state == PLAYER_TURN){
+                        int row = event.motion.x/TILE_WIDTH; int column = event.motion.y/TILE_HEIGHT;
+                        if(game->tiles[row][column] == EMPTY){
+                            changeTile(game, event.motion.x/TILE_WIDTH, event.motion.y/TILE_HEIGHT, X);
+                            game->state = ROBOT_TURN;
+                            isOver(game);
+                        }
+                    }
                     break;
                 }
             break;
@@ -68,6 +75,10 @@ void handleEvents(Game* game){
 
 
 void update(Game* game){
+    if(game->state == ROBOT_TURN){
+        robotTurn(game);
+        game->state = PLAYER_TURN;
+    }
 
 }
 
